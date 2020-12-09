@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=.1
+Type=Application
+Name=Satellite LNB contoller
+GenericName=Satellite LNB controller
+Comment=Control software (GUI) for the Oleg's LNB controller
+Exec=lnb_controller
+Icon=lnb_controller.png
+Terminal=false
+Categories=Network;HamRadio;
+Keywords=SDR;Radio;HAM;
