@@ -94,7 +94,7 @@ make install-cli
 make uninstall-gui
 ```
 
-Linux version of the application supports full desktop integration
+Linux version of the application supports full desktop integration<br>
 ![](images/lnb_controller_de_integraton.png)
 
 ### GUI application
