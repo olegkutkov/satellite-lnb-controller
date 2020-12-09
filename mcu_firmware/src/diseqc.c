@@ -99,33 +99,33 @@ static void init_diseqc_gpio(void)
 	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOB);
 	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOA);
 
-    LL_GPIO_ResetOutputPin(CH1_VOLTAGE_CTRL_PORT, CH1_VOLTAGE_CTRL_PIN);
-    LL_GPIO_ResetOutputPin(CH2_VOLTAGE_CTRL_PORT, CH2_VOLTAGE_CTRL_PIN);
-    LL_GPIO_ResetOutputPin(PS_CTRL_PORT, PS_CTRL_PIN);
+	LL_GPIO_ResetOutputPin(CH1_VOLTAGE_CTRL_PORT, CH1_VOLTAGE_CTRL_PIN);
+	LL_GPIO_ResetOutputPin(CH2_VOLTAGE_CTRL_PORT, CH2_VOLTAGE_CTRL_PIN);
+	LL_GPIO_ResetOutputPin(PS_CTRL_PORT, PS_CTRL_PIN);
 
 	/* Channel 1 voltage control pin */
-    GPIO_InitStruct.Pin = CH1_VOLTAGE_CTRL_PIN;
-    GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-    GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-    GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-    GPIO_InitStruct.Pull = LL_GPIO_PULL_DOWN;
-    LL_GPIO_Init(CH1_VOLTAGE_CTRL_PORT, &GPIO_InitStruct);
+	GPIO_InitStruct.Pin = CH1_VOLTAGE_CTRL_PIN;
+	GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+	GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+	GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+	GPIO_InitStruct.Pull = LL_GPIO_PULL_DOWN;
+	LL_GPIO_Init(CH1_VOLTAGE_CTRL_PORT, &GPIO_InitStruct);
 
 	/* Channel 2 voltage control pin */
-    GPIO_InitStruct.Pin = CH2_VOLTAGE_CTRL_PIN;
-    GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-    GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-    GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-    GPIO_InitStruct.Pull = LL_GPIO_PULL_DOWN;
-    LL_GPIO_Init(CH2_VOLTAGE_CTRL_PORT, &GPIO_InitStruct);
+	GPIO_InitStruct.Pin = CH2_VOLTAGE_CTRL_PIN;
+	GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+	GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+	GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+	GPIO_InitStruct.Pull = LL_GPIO_PULL_DOWN;
+	LL_GPIO_Init(CH2_VOLTAGE_CTRL_PORT, &GPIO_InitStruct);
 
 	/* Power supply control pin */
-    GPIO_InitStruct.Pin = PS_CTRL_PIN;
-    GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-    GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-    GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-    GPIO_InitStruct.Pull = LL_GPIO_PULL_DOWN;
-    LL_GPIO_Init(PS_CTRL_PORT, &GPIO_InitStruct);
+	GPIO_InitStruct.Pin = PS_CTRL_PIN;
+	GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+	GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+	GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+	GPIO_InitStruct.Pull = LL_GPIO_PULL_DOWN;
+	LL_GPIO_Init(PS_CTRL_PORT, &GPIO_InitStruct);
 }
 
 /* Set channel 1 22KHz tone mode (enabled/disabled) */
