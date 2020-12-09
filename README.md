@@ -10,7 +10,7 @@ This is a repository for a dual-channel satellite LNB controller.
 
 ---
 ### Hardware
-
+![](images/lnb_controller_board_overview.JPG)
 The controller is based on a popular STM32F103 MCU board, aka "Blue Pill". In my case, it's a black "STM32 MINI" from RobotDyn. I found this version of the "pill" is of better quality and more reliable.<br>
 The rest of the LNB controller is built on a breadboard with SMD and through-hole components. Voltage regulators are based on LM317.<br>
 The board schematic is down below.
@@ -24,8 +24,7 @@ There are two power options for the converter:
  - External PSU.
  
  ![](images/lnb_controller_v1_schematic_bw.png)
- 
- 
+  
  ### Controller firmware
  STM32 controller firmware source code can be found here: [mcu_firmware/](https://github.com/olegkutkov/satellite-lnb-controller/tree/main/mcu_firmware)
  
@@ -128,6 +127,13 @@ Disable the power supply:
 lnb_controller-cli -p /dev/ttyACM0 -w 1
 ```
 ![](images/lnb_controller_console_on_mac.png)
+
+### Hardware output signals
+14V output (Vertical/Right polarization):<br>
+![](images/lnb_vert_scope.png)
+
+14V output with 22KHz signal injected:<br>
+![](images/lnb_vert_scope_22KHz_injected.png)
 
 ### TODO
 Implementing the full DISEqC protocol in order to control positioners. This is the reason why there is an diseq.c file in the MCU firmware directory.
