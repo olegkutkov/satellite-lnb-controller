@@ -124,7 +124,7 @@ lnb_controller-cli -p /dev/ttyACM0 -w 1
 ```
 Disable the power supply:
 ```bash
-lnb_controller-cli -p /dev/ttyACM0 -w 1
+lnb_controller-cli -p /dev/ttyACM0 -w 0
 ```
 ![](images/lnb_controller_console_on_mac.png)
 
