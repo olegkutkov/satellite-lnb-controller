@@ -135,5 +135,9 @@ lnb_controller-cli -p /dev/ttyACM0 -w 0
 14V output with 22KHz signal injected:<br>
 ![](images/lnb_vert_scope_22KHz_injected.png)
 
+
+### Setup example
+![](https://github.com/olegkutkov/satellite-lnb-controller)
+
 ### TODO
 Implementing the full DISEqC protocol in order to control positioners. This is the reason why there is an diseq.c file in the MCU firmware directory.
