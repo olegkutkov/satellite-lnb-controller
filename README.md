@@ -27,7 +27,7 @@ There are two power options for the converter:
  
  
  ### Controller firmware
- STM32 controller firmware source code can be found here: [mcu_firmware/](<mcu_firmware/>)
+ STM32 controller firmware source code can be found here: [mcu_firmware/](https://github.com/olegkutkov/satellite-lnb-controller/tree/main/mcu_firmware)
  
  To compile this project you will need **gcc-arm-none-eabi package**
  
@@ -37,7 +37,7 @@ There are two power options for the converter:
  make
  ```
  
- Also, there are already compiled binaries in [mcu_firmware/precompiled/](<mcu_firmware/precompiled/>)
+ Also, there are already compiled binaries in [mcu_firmware/precompiled/](https://github.com/olegkutkov/satellite-lnb-controller/tree/main/mcu_firmware/precompiled)
  
  The build procedure implies using the ST-Link programmer connected to the SWD port of the MCU board.
 Set the following configuration of the BOOT pins:<br>
@@ -105,10 +105,10 @@ Then you can switch On and Off the system power supply and configure both LNB ch
 The Refresh interval is 500 ms.<br>
 Additionally, this program reads the whole state of the hardware in order to be in sync GUI-hardware state.
 
-Linux:
+Linux:<br>
 ![](images/lnb_controller_gui_on_linux.png)
 <br>
-macOS:
+macOS:<br>
 ![](images/lnb_controller_gui_on_mac.png)
 
 ### Console application
